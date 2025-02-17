@@ -1,8 +1,9 @@
 <template>
-  <div class="h-screen bg-gray-100">
+   
+  <div class="h-lvh bg-gray-100 overflow-hidden">
     <!-- Show StartScreen if quiz has not started -->
-    <start-screen v-if="!isStarted" @start="startQuiz" />
-    <div class="max-w-md mx-auto bg-white rounded-xl rounded-t-none max-sm:h-screen shadow-lg overflow-hidden">
+   <start-screen v-if="!isStarted" @start="startQuiz" />
+      <div class="max-w-md mx-auto bg-white rounded-xl rounded-t-none max-sm:h-screen shadow-lg overflow-hidden">
       
       <!-- Show Quiz if started -->
       <transition name="fade" mode="out-in">
