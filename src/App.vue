@@ -3,10 +3,9 @@
   <div class="h-lvh bg-gray-100 overflow-hidden">
     <!-- Show StartScreen if quiz has not started -->
    <start-screen v-if="!isStarted" @start="startQuiz" />
-      <div class="max-w-md mx-auto bg-white rounded-xl rounded-t-none max-sm:h-screen shadow-lg overflow-hidden">
-      
-      <!-- Show Quiz if started -->
-      <transition name="fade" mode="out-in">
+      <div class="max-w-md mx-auto bg-white rounded-xl lg:shadow-lg rounded-t-none max-sm:h-screen  overflow-hidden">
+            <!-- Show Quiz if started -->
+      <transition name="fade" mode="out-in" >
         <quiz-complete
           v-if="isComplete"
           :score="currentPoints"
@@ -22,7 +21,7 @@
             :currentPoints="currentPoints"
           />
 
-          <div class="p-6" v-if="currentQuestion">
+          <div class="p-6 " v-if="currentQuestion">
             <h2 class="text-xl font-semibold mb-4 text-gray-900">
               Question {{ currentQuestionIndex + 1 }}
             </h2>
@@ -66,6 +65,7 @@
             >
               Continue →
             </button>
+            
           </div>
         </div>
       </transition>

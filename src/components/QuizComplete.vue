@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center p-8 flex flex-col justify-center items-center shadow-lg">
+    <div class="text-center py-8 flex flex-col justify-center items-center h-lvh bg-gray-100">
       <h2 class="text-2xl font-bold mb-4">Quiz Completed!</h2>
       <div class="mb-6">
         <p class="text-lg mb-2">Your Score: {{ score }} / {{ totalPoints }}</p>

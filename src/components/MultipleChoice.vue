@@ -5,12 +5,12 @@
         :key="index"
         @click="selectOption(option)"
         :class="[
-          'p-4 rounded-lg border cursor-pointer transition-all transform',
+          'p-4 rounded-lg border  cursor-pointer transition-all transform',
           getOptionClass(option),
           { 'shake-animation': showShake && option === selectedAnswer && !isCorrect }
         ]"
       >
-        <div class="flex items-center">
+        <div class="flex items-center ">
           <span class="mr-3">{{ ['A', 'B', 'C', 'D'][index] }}</span>
           <span>{{ option.text }}</span>
         </div>
