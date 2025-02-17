@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gray-100">
+  <div class="h-screen bg-gray-100">
     <!-- Show StartScreen if quiz has not started -->
     <start-screen v-if="!isStarted" @start="startQuiz" />
     <div class="max-w-md mx-auto bg-white rounded-xl rounded-t-none max-sm:h-screen shadow-lg overflow-hidden">
