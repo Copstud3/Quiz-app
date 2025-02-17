@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center shadow-none justify-center bg-gray-100">
+    <div class="flex flex-col items-center shadow-none justify-center h-lvh bg-gray-100">
       <div class="bg-white p-8 rounded-xl shadow-lg text-center">
         <h1 class="text-2xl font-bold text-gray-900">Welcome to the Quiz</h1>
         <p class="text-gray-600 mt-2">Test your knowledge with fun questions!</p>
