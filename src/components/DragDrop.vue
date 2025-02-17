@@ -29,7 +29,7 @@
       aria-dropeffect="move"
     >
       <p class="text-gray-500" v-if="!selectedAnswer">
-        Drag your answer here
+        Hold & drag your answer here
       </p>
       <p class="text-purple-600" v-else>
         {{ selectedAnswer }}
